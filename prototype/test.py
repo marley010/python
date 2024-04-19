@@ -12,18 +12,18 @@ pygame.display.set_caption("Space Shooter Tutorial")
 bestandsnaam = "pixel_ship_yellow.png"
 bestandslocatie = os.path.join("assets", bestandsnaam)
 
-YELLOW_SPACE_SHIP = pygame.image.load("pixel_ship_yellow.png")
-RED_SPACE_SHIP = pygame.image.load("pixel_ship_red_small.png")
-GREEN_SPACE_SHIP = pygame.image.load("pixel_ship_green_small.png")
-BLUE_SPACE_SHIP = pygame.image.load("pixel_ship_blue_small.png")
+YELLOW_SPACE_SHIP = pygame.image.load("./prototype/pixel_ship_yellow.png")
+RED_SPACE_SHIP = pygame.image.load("./prototype/pixel_ship_red_small.png")
+GREEN_SPACE_SHIP = pygame.image.load("./prototype/pixel_ship_green_small.png")
+BLUE_SPACE_SHIP = pygame.image.load("./prototype/pixel_ship_blue_small.png")
 
-YELLOW_LASER = pygame.image.load("pixel_laser_yellow.png")
-RED_LASER = pygame.image.load("pixel_laser_red.png")
-GREEN_LASER = pygame.image.load("pixel_laser_green.png")
-BLUE_LASER = pygame.image.load("pixel_laser_blue.png")
+YELLOW_LASER = pygame.image.load("./prototype/pixel_laser_yellow.png")
+RED_LASER = pygame.image.load("./prototype/pixel_laser_red.png")
+GREEN_LASER = pygame.image.load("./prototype/pixel_laser_green.png")
+BLUE_LASER = pygame.image.load("./prototype/pixel_laser_blue.png")
 
 
-BG = pygame.transform.scale(pygame.image.load(os.path.join("background-black.png")), (WIDTH, HEIGHT))
+BG = pygame.transform.scale(pygame.image.load(os.path.join("./prototype/background-black.png")), (WIDTH, HEIGHT))
 
 class Laser:
     def __init__(self, x, y, img):
